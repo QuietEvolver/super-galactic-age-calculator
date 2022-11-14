@@ -17,10 +17,10 @@ describe('Planet', () => {
     expect(planet.age).toEqual(10);
   });
 
-  // test('should correctly determine if a planet has been entered', () => {
-  //   planet = new Planet(10);
-  //   expect(planet.getPlanetYear()).not.toBeNull();
-  // });
+  test('should correctly determine if a planet has been entered', () => {
+    planet = new Planet("Earth");
+    expect(planet.getPlanetYear()).not.toBeNull();
+  });
 
   // test('should return 10 equivalent if it is the planet Earth, for 1 Earth year', () => {
   //   planet = new Planet(10);
