@@ -8,10 +8,12 @@ describe('Planets', () => {
   });
 
   test('should create correctly a planet object',() => {
+    planet = new Planet(1);
     expect(planet.entry).toEqual("1");
   }); 
 
   test('should return a 1 equivalent to 1 Earth year', () => {
+    planet = new Planet("Earth");
     expect("Earth").toEqual("1");
   });
 
