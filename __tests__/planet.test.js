@@ -4,7 +4,7 @@ describe('Planets', () => {
   let planet;
   
   beforeEach(() => {
-    planet = new Planet(1);
+    planet = new Planet();
   });
 
   test('should create correctly a planet object',() => {
@@ -12,7 +12,7 @@ describe('Planets', () => {
   }); 
 
   test('should return a 1 equivalent to 1 Earth year', () => {
-    expect(planet.entry).toEqual("1");
+    expect("Earth").toEqual("1");
   });
 
 }); 
