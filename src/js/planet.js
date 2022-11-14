@@ -4,8 +4,8 @@ export default class Planet {
     this.entry = entry;
   }
 
-  getPlanetYear(entry) {
-    if(entry === 'Earth'){
+  getPlanetYear() {
+    if(this.entry === 'Earth'){
       return 1;
     } else {
       return "Planet out of galactic range."
