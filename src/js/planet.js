@@ -7,6 +7,8 @@ export default class Planet {
   getPlanetYear(entry) {
     if(entry === 'Earth'){
       return 1;
+    } else {
+      return "Planet out of galactic range."
     }
   }
 }
