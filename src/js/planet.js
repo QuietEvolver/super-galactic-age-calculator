@@ -7,14 +7,22 @@ export default class Planet {
 
   getPlanetYear() {
     // let planetYear;
-    let planet = 'Earth';
-    let age = 10;
-    if( planet === 'Earth'){
-      // let planetYear = ((1/1)*365);
-      // let age = this.age * planetYear;
-      return age;
-    } else {
-      return "Planet out of galactic range."
+    let planetEarth = 'Earth';
+    // this.age = 10;
+    if( planetEarth === 'Earth'){
+      let planetYear = (365/365);
+      this.age *= planetYear;
+      return this.age;
+    // } else {
+    //   return "Planet age out of galactic range.";
     }
   }
 }
+  
+// getPlanetYear() {
+//   if(this.entry === 'Earth'){
+//     return 1;
+//   } else {
+//     return "Planet out of galactic range."
+//   }
+// }
