@@ -4,4 +4,9 @@ export default class Planet {
     this.entry = entry;
   }
 
+  getPlanetYear(entry) {
+    if(entry === 'Earth'){
+      return 1;
+    }
+  }
 }
