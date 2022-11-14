@@ -26,4 +26,10 @@ describe('Planet', () => {
     planet = new Planet("Earth");
     expect(planet.getPlanetYear()).toEqual(1);
   });
+
+  test('should return a 1, given Earth, if calculation is equivalent for 1 Earth year', () => {
+    planet = new Planet("Earth");
+    expect(planet.getPlanetYear()).toEqual(1);
+  });
+
 }); 
