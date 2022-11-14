@@ -8,28 +8,28 @@ describe('Planet', () => {
   });
 
   test('should create correctly a planet object',() => {
-    planet = new Planet(1);
-    expect(planet.entry).toEqual(1);
+    planet = new Planet(1, 10);
+    expect(planet.entry).toEqual(1, 10);
   }); 
 
   test('should return a 1 equivalent to 1 Earth year', () => {
-    planet = new Planet(1);
-    expect(planet.entry).toEqual(1);
+    planet = new Planet(1, 10);
+    expect(planet.entry).toEqual(1, 10);
   });
 
   test('should correctly determine if a planet has been entered', () => {
-    planet = new Planet("Pluto");
+    planet = new Planet("Pluto", 10);
     expect(planet.getPlanetYear()).not.toBeNull();
   });
 
   test('should return a 1, equivalent if it is the planet Earth, for 1 Earth year', () => {
-    planet = new Planet("Earth");
-    expect(planet.getPlanetYear()).toEqual(1);
+    planet = new Planet("Earth", 10);
+    expect(planet.getPlanetYear()).toEqual(1, 10);
   });
 
-  test('should return a 1, given Earth, if calculation is equivalent for 1 Earth year', () => {
-    planet = new Planet("Earth");
-    expect(planet.getPlanetYear()).toEqual(1);
+  test('should return a 10, given Earth, if calculation is equivalent for 1 Earth year', () => {
+    planet = new Planet("Earth", 10);
+    expect(planet.getPlanetYear()).toEqual(10);
   });
 
 }); 
