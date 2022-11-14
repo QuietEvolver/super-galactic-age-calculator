@@ -18,12 +18,12 @@ describe('Planet', () => {
   });
 
   test('should correctly determine if a planet has been entered', () => {
-    planet = new Planet("Earth");
+    planet = new Planet("Pluto");
     expect(planet.getPlanetYear()).not.toBeNull();
   });
 
   test('should return a 1, equivalent if it is the planet Earth, for 1 Earth year', () => {
     planet = new Planet("Earth");
-    expect(planet.getPlanetYear()).toEqual();
+    expect(planet.getPlanetYear()).toEqual(1);
   });
 }); 
