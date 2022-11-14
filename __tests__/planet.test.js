@@ -28,13 +28,13 @@ describe('Planet', () => {
   });
 
   test('should return a 10, given Earth, if calculation is equivalent for 1 Earth year', () => {
-    planet = new Planet(41.48);
-    expect(planet.getPlanetYear()).toEqual(41.48);
+    planet = new Planet(10);
+    expect(planet.getPlanetYear()).toEqual(10);
   });
 
   test('should return age for planet Mercury for 10 earth years ', () => {
-    planet = new Planet(10);
-    expect(planet.getPlanetYear()).toEqaual();
+    planet = new Planet(41.48);
+    expect(planet.getPlanetYear()).toEqual(41.48);
   });
 
 }); 
