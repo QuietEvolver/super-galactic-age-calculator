@@ -9,14 +9,13 @@ describe('Planet', () => {
 
   test('should correctly create a planet object',() => {
     let planet = new Planet(10);
-    // planet.age = 10;
     expect(planet.age).toEqual(10);
   }); 
 
-  // test('should return a 10 equivalent to 1 Earth year', () => {
-  //   planet = new Planet(10);
-  //   expect(planet.entry).toEqual(10);
-  // });
+  test('should return a 10 equivalent to 1 Earth year', () => {
+    planet = new Planet(10);
+    expect(planet.age).toEqual(10);
+  });
 
   // test('should correctly determine if a planet has been entered', () => {
   //   planet = new Planet(10);
