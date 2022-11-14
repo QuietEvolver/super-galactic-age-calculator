@@ -1,0 +1,13 @@
+import Planet from './../src/js/planet.js';
+// "I run, fall, rerun\nFall, get back up, and then I\ndrink from water cup"
+describe('Planets', () => {
+  let planet;
+  
+  beforeEach(() => {
+    planet = new Planet(1);
+  });
+
+  test('should create correctly a planet object',() => {
+    expect(planet.entry).toEqual("1");
+  }); 
+}); 
