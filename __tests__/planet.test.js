@@ -17,8 +17,8 @@ describe('Planet', () => {
     expect(planet.age).toEqual(10);
   });
 
-  test('should correctly determine if a planet has been entered', () => {
-    planet = new Planet("Earth");
+  test('should correctly determine if an age has been entered', () => {
+    planet = new Planet("Pluto");
     expect(planet.getPlanetYear()).not.toBeNull();
   });
 
