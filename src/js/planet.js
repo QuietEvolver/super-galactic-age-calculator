@@ -6,7 +6,26 @@ export default class Planet {
   }
 
   getPlanetYear() {
-    
+
+    // let planetYear;
+    // // let planetMercury = 'Mercury';
+    //  this.age = 10;
+    // for(let i = 0; i = this.age.length; i++ ){
+    // let planetEarth = 'Earth';
+    // if( planetEarth === 'Earth'){
+      let planetYear = (365/365);
+      this.age *= planetYear;
+      return this.age;
+    // } else 
+    // if( planetMercury === 'Mercury'){
+    //   let planetYear = (87.6);
+    //   console.log(planetYear);
+    //   this.age *= planetYear;
+    //   console.log("this.age", this.age);
+    //   return this.age;
+    // }else {
+    //   return "Planet age out of galactic range.";
+   // }}
   }
 }
   
