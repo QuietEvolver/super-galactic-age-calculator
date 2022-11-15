@@ -6,39 +6,30 @@ export default class Planet {
   }
 
   getPlanetYear() {
+    // let planetYear = (365/365);
+    // this.age *= planetYear;
 
-    // let planetYear;
-    // // let planetMercury = 'Mercury';
-    //  this.age = 10;
-    // for(let i = 0; i = this.age.length; i++ ){
-    // let planetEarth = 'Earth';
-    // if( planetEarth === 'Earth'){
-      let planetYear = (365/365);
-      this.age *= planetYear;
-      return this.age;
-    // } else 
-    // if( planetMercury === 'Mercury'){
-    //   let planetYear = (87.6);
-    //   console.log(planetYear);
-    //   this.age *= planetYear;
-    //   console.log("this.age", this.age);
-    //   return this.age;
-    // }else {
-    //   return "Planet age out of galactic range.";
-   // }}
+    let ageInEarthDays = this.age * 365;
+    console.log("ageInEarthDays: ", ageInEarthDays);    
+    let planetYearInEarthDays = (365);
+    this.age = Math.round(ageInEarthDays/planetYearInEarthDays);
+    return this.age;
   }
 
   getMercuryPlanetYear(){
     // let planetYear = (365/.24);
-    let planetYear = (87.6);
-    this.age *= planetYear;
-    return this.age;
+
+    // let ageInEarthDays = this.age * 365;
+    // console.log("ageInEarthDays: ", ageInEarthDays);
+    // let planetYearInEarthDays = (87.6);
+    // this.age = Math.round(ageInEarthDays/planetYearInEarthDays);
+    // return this.age;
   }
 
   getVenusPlanetYear(){
-    let planetYear = (226.3);
-    this.age *= planetYear;
-    return this.age;
+    // let planetYear = (226.3);
+    // this.age *= planetYear;
+    // return this.age;
   }
 
   getMarsPlanetYear(){
@@ -47,13 +38,15 @@ export default class Planet {
     return this.age;
   }
 
-  getJupiterPlanetYear(){
-    let planetYear = (4328.9);
-    console.log("planetYear: ", planetYear);
-    this.age *= planetYear;
-    console.log("this.age: ", this.age);
-    return this.age;
-  }
+  // getJupiterPlanetYear(){
+  //   let ageInEarthDays = this.age * 365;
+  //   let planetYearInEarthDays = (4328.9);
+  //   let planetYear = ageInEarthDays/planetYearInEarthDays;
+  //   console.log("planetYear: ", planetYear);
+  //   this.age *= planetYear;
+  //   console.log("this.age: ", this.age);
+  //   return this.age;
+  // }
 }
 // getPlanetYear() {
 //   if(this.entry === 'Earth'){
