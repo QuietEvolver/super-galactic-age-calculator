@@ -8,18 +8,17 @@ describe('Planet', () => {
   });
 
   test('should correctly create a planet object',() => {
-    let planet = new Planet('Earth', 10);
-    expect(planet.entry, planet.age).toEqual(10);
+    expect(planet.entry).toEqual('Earth');
+    expect(planet.age).toEqual(10);
   }); 
 
   test('should return a 10 equivalent to 1 Earth year', () => {
-    planet = new Planet('Earth', 10);
     expect(planet.entry).toEqual('Earth');
     expect(planet.age).toEqual(10);
   });
 
   test('should correctly determine if an age has been entered', () => {
-    planet = new Planet("Pluto", 10);
+    // planet = new Planet("Pluto", 10);
     expect(planet.getPlanetEarthYear()).not.toBeNull();
   });
 
