@@ -54,7 +54,7 @@ describe('Planet', () => {
 
   test('should return an additional 2 years if likes flowers ', () => {
     planet = new Planet(10);
-    expect(planet.getLikesFlowers()).toEqual(2);
+    expect(planet.getLikesFlowers()).toEqual(12);
   });
 
 }); 
