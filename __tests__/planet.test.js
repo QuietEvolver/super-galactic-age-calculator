@@ -8,33 +8,32 @@ describe('Planet', () => {
   });
 
   test('should correctly create a planet object',() => {
-    expect(planet.entry).toEqual('Earth', 10);
-    // expect(planet.age).toEqual(10);
+    let planet = new Planet(10);
+    expect(planet.age).toEqual(10);
   }); 
 
-  // test('should return a 10 equivalent to 1 Earth year', () => {
-  //   expect(planet.entry).toEqual('Earth');
-  //   expect(planet.age).toEqual(10);
-  // });
+  test('should return a 10 equivalent to 1 Earth year', () => {
+    planet = new Planet(10);
+    expect(planet.age).toEqual(10);
+  });
 
-  // test('should correctly determine if an age has been entered', () => {
-  //   // planet = new Planet("Pluto", 10);
-  //   expect(planet.getPlanetEarthYear()).not.toBeNull();
-  // });
+  test('should correctly determine if an age has been entered', () => {
+    planet = new Planet("Pluto");
+    expect(planet.getPlanetYear()).not.toBeNull();
+  });
 
-  // test('should return 10 equivalent if it is the planet Earth, for 1 Earth year', () => {
-  //   planet = new Planet(10);
-  //   expect(planet.getPlanetEarthYear()).toEqual(10);
-  // });
+  test('should return 10 equivalent if it is the planet Earth, for 1 Earth year', () => {
+    planet = new Planet(10);
+    expect(planet.getPlanetYear()).toEqual(10);
+  });
 
-  // test('should return a 10, given Earth, if calculation is equivalent for 1 Earth year', () => {
-  //   planet = new Planet(10);
-  //   expect(planet.getPlanetEarthYear()).toEqual(10);
-  // });
+  test('should return a 10, given Earth, if calculation is equivalent for 1 Earth year', () => {
+    planet = new Planet(10);
+    expect(planet.getPlanetYear()).toEqual(10);
+  });
 
   // test('should return age for planet Mercury for 10 earth years ', () => {
   //   planet = new Planet(10);
-  //   expect(planet.getPlanetMercuryYear()).toEqual(876);
+  //   expect(planet.getPlanetYear()).toEqual(8.76);
   // });
-
 }); 
