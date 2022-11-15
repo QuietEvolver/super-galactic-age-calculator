@@ -27,20 +27,15 @@ describe('Planet', () => {
     expect(planet.getEarthPlanetYear()).toEqual(10);
   });
 
-  // test('should return a 10, given Earth, if calculation is equivalent for 1 Earth year', () => {
-  //   planet = new Planet(10);
-  //   expect(planet.getPlanetYear()).toEqual(10);
-  // });
+  test('should return age for planet Mercury for 10 earth years ', () => { //  876
+    planet = new Planet(10);
+    expect(planet.getMercuryPlanetYear()).toEqual(42);
+  });
 
-  // test('should return age for planet Mercury for 10 earth years ', () => { //  876
-  //   planet = new Planet(10);
-  //   expect(planet.getMercuryPlanetYear()).toEqual(42);
-  // });
-
-  // test('should return age for planet Venus for 10 earth years ', () => {
-  //   planet = new Planet(10);
-  //   expect(planet.getVenusPlanetYear()).toEqual(2263);
-  // });
+  test('should return age for planet Venus for 10 earth years ', () => {
+    planet = new Planet(10);
+    expect(planet.getVenusPlanetYear()).toEqual(16);
+  });
 
   // test('should return age for planet Mars for 10 earth years ', () => {
   //   planet = new Planet(10);
