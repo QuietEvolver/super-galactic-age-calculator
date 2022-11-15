@@ -32,9 +32,9 @@ describe('Planet', () => {
   //   expect(planet.getPlanetYear()).toEqual(10);
   // });
 
-  test('should return age for planet Mercury for 10 earth years ', () => { // 41.66666666666667
+  test('should return age for planet Mercury for 10 earth years ', () => { //  876
     planet = new Planet(10);
-    expect(planet.getMercuryPlanetYear()).toEqual(876);
+    expect(planet.getMercuryPlanetYear()).toEqual(42);
   });
 
   test('should return age for planet Venus for 10 earth years ', () => {
@@ -47,8 +47,8 @@ describe('Planet', () => {
     expect(planet.getMarsPlanetYear()).toEqual(6862);
   });
 
-  test('should return age for planet Mars for 10 earth years ', () => {
-    planet = new Planet(10);
-    expect(planet.getJupiterPlanetYear()).toEqual(43289);
-  });
+  // test('should return age for planet Mars for 10 earth years ', () => {
+  //   planet = new Planet(10);
+  //   expect(planet.getJupiterPlanetYear()).toEqual(43289);
+  // });
 }); 
