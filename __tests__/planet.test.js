@@ -46,4 +46,15 @@ describe('Planet', () => {
     planet = new Planet(10);
     expect(planet.getJupiterPlanetYear()).toEqual(1);
   });
+
+  test('should return age for planet Jupiter for 10 earth years ', () => {
+    planet = new Planet(10);
+    expect(planet.getJupiterPlanetYear()).toEqual(1);
+  });
+
+  test('should return an additional 2 years if likes flowers ', () => {
+    planet = new Planet(10);
+    expect(planet.getLikesFlowers()).toEqual(2);
+  });
+
 }); 
