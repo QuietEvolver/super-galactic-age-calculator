@@ -43,6 +43,12 @@ export default class Planet {
 
   getMarsPlanetYear(){
     let planetYear = (686.2);
+    this.age *= planetYear;
+    return this.age;
+  }
+
+  getJupiterPlanetYear(){
+    let planetYear = (4328.9);
     console.log("planetYear: ", planetYear);
     this.age *= planetYear;
     console.log("this.age: ", this.age);
