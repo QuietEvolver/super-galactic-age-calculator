@@ -42,8 +42,8 @@ describe('Planet', () => {
     expect(planet.getMarsPlanetYear()).toEqual(5);
   });
 
-  // test('should return age for planet Jupiter for 10 earth years ', () => {
-  //   planet = new Planet(10);
-  //   expect(planet.getJupiterPlanetYear()).toEqual(43289);
-  // });
+  test('should return age for planet Jupiter for 10 earth years ', () => {
+    planet = new Planet(10);
+    expect(planet.getJupiterPlanetYear()).toEqual(43289);
+  });
 }); 
