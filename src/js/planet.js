@@ -32,6 +32,12 @@ export default class Planet {
   getMercuryPlanetYear(){
     // let planetYear = (365/.24);
     let planetYear = (87.6);
+    this.age *= planetYear;
+    return this.age;
+  }
+
+  getVenusPlanetYear(){
+    let planetYear = (226.3);
     console.log("planetYear: ", planetYear);
     this.age *= planetYear;
     console.log("this.age: ", this.age);
