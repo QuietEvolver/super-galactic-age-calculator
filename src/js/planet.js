@@ -5,7 +5,7 @@ export default class Planet {
     this.age = age;
   }
 
-  getPlanetYear() {
+  getEarthPlanetYear() {
     // let planetYear = (365/365);
     // this.age *= planetYear;
 
@@ -18,25 +18,25 @@ export default class Planet {
 
   getMercuryPlanetYear(){
     // let planetYear = (365/.24);
-
-    // let ageInEarthDays = this.age * 365;
-    // console.log("ageInEarthDays: ", ageInEarthDays);
-    // let planetYearInEarthDays = (87.6);
-    // this.age = Math.round(ageInEarthDays/planetYearInEarthDays);
-    // return this.age;
-  }
-
-  getVenusPlanetYear(){
-    // let planetYear = (226.3);
-    // this.age *= planetYear;
-    // return this.age;
-  }
-
-  getMarsPlanetYear(){
-    let planetYear = (686.2);
-    this.age *= planetYear;
+    let ageInEarthDays = this.age * 365;
+    console.log("ageInEarthDays: ", ageInEarthDays);
+    let planetYearInEarthDays = (87.6);
+    this.age = Math.round(ageInEarthDays/planetYearInEarthDays);
+    console.log("this.age; Mercury ", this.age);
     return this.age;
   }
+  
+  // getVenusPlanetYear(){
+  //   let planetYear = (226.3);
+  //   this.age *= planetYear;
+  //   return this.age;
+  // }
+
+  // getMarsPlanetYear(){
+  //   let planetYear = (686.2);
+  //   this.age *= planetYear;
+  //   return this.age;
+  // }
 
   // getJupiterPlanetYear(){
   //   let ageInEarthDays = this.age * 365;
