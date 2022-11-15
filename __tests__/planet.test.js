@@ -39,7 +39,7 @@ describe('Planet', () => {
 
   test('should return age for planet Mars for 10 earth years ', () => {
     planet = new Planet(10);
-    expect(planet.getMarsPlanetYear()).toEqual(0);
+    expect(planet.getMarsPlanetYear()).toEqual(5);
   });
 
   // test('should return age for planet Jupiter for 10 earth years ', () => {
