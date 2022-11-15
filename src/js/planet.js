@@ -4,8 +4,4 @@ export default class Planet {
     // this.entry = entry;
     this.age = age;
   }
-
-  getPlanetYear() {
- 
-  }
 }
