@@ -36,4 +36,9 @@ describe('Planet', () => {
     planet = new Planet(10);
     expect(planet.getMercuryPlanetYear()).toEqual(876);
   });
+
+  test('should return age for planet Mercury for 10 earth years ', () => {
+    planet = new Planet(10);
+    expect(planet.getVenusPlanetYear()).toEqual(2263);
+  });
 }); 
