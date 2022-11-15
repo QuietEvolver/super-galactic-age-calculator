@@ -27,8 +27,14 @@ export default class Planet {
     //   return "Planet age out of galactic range.";
    // }}
   }
-}
+
   
+  getMercuryPlanetYear(){
+    let planetYear = (365/.24);
+    this.age *= planetYear;
+    return this.age;
+  }
+}
 // getPlanetYear() {
 //   if(this.entry === 'Earth'){
 //     return 1;
