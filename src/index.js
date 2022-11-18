@@ -6,12 +6,19 @@ import Planet from './js/planet.js';
 function handlePlanetForm(event) {
   event.preventDefault();
   document.querySelector('#response').innerText = null;
-  const entry = parseInt(document.querySelector('#entry').value);
+  // const entry = parseInt(document.querySelector('#entry').value);
+  let age = parseInt(document.querySelector("#inputted-age").value);
+  
+  const planet = new Planet(age);
+  const response = 
+  `Earth: ${planet.getEarthPlanetYear()}, \n
+    Mercury: ${planet.getMercuryPlanetYear()}, 
+    Venus: ${planet.getVenusPlanetYear()},
+    Mars: ${planet.getMarsPlanetYear()},
+    Jupiter: ${planet.getJupiterPlanetYear()}`;
 
-  const planet = new Planet(entry);
-  const response = planet.checkType();
   const pTag = document.createElement("p");
-  pTag.append(`Your planet life is: ${response}.`);
+  pTag.append(`Your ages on the following planets are: ${response}.`);
   document.querySelector('#response').append(pTag);
 }
 
