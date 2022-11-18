@@ -53,8 +53,34 @@ describe('Planet', () => {
   });
 
   test('should return an additional 2 years if likes flowers ', () => {
-    planet = new Planet(10);
-    expect(planet.getLikesFlowers()).toEqual(12);
+    planet = new Planet(200);
+    expect(planet.getLifeExpectancy()).toEqual(190);
   });
 
+  // simple: have the user input the average life expectancy for their demographic
+
+  test('should return a value of a person age for remaining life expectancy ', () => {
+    planet = new Planet(70);
+    expect(planet.getLifeExpectancy()).toEqual(20);
+  });
+
+  test('should return a absolute value of a person age if over life expectancy ', () => {
+    planet = new Planet(50);
+    expect(planet.getLifeExpectancy()).toEqual(-20);
+  });
+
+  test('should return a value of +1 a person based on their demographic', () => {
+    planet = new Planet(50);
+    expect(planet.getLifeExpectancy()).toEqual(51);
+  });
+  const absoluteValue = require('./index');
+  test('absolute Value function exists', () => {
+    expect(typeof absoluteValue).toEqual('function');
+  });
+
+test('should return a absolute value of a person age if over life expectancy ', () => {
+    // planet = new Planet(200);
+    // expect(planet.getLifeExpectancy()).toEqual(190);
+    expect(absoluteValue(-20)).toEqual(20);
+  });
 }); 
