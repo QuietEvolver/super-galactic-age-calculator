@@ -8,6 +8,18 @@ function handlePlanetForm(event) {
   document.querySelector('#response').innerText = null;
   // const entry = parseInt(document.querySelector('#entry').value);
   let age = parseInt(document.querySelector("#inputted-age").value);
+  const tabulations = [];
+  console.log("tabulations: ", tabulations);
+
+  if(document.getElementById("pollen").checked===true){
+    tabulations.push("pollen");
+  } 
+  if(document.getElementById("moss").checked===true){
+    tabulations.push("moss");
+  }
+  if(document.getElementById("azure").checked===true){
+    tabulations.push("azure");
+  } 
   
   const planet = new Planet(age);
   const response = 
