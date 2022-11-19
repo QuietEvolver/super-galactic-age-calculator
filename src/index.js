@@ -27,7 +27,8 @@ function handlePlanetForm(event) {
     Mercury: ${planet.getMercuryPlanetYear()}, 
     Venus: ${planet.getVenusPlanetYear()},
     Mars: ${planet.getMarsPlanetYear()},
-    Jupiter: ${planet.getJupiterPlanetYear()}`;
+    Jupiter: ${planet.getJupiterPlanetYear()}
+    LifeExpectancy FUNCTION: ${planet.getLifeExpectancy()}`;
 
   const pTag = document.createElement("p");
   pTag.append(`Your ages on the following planets are: ${response}.`);

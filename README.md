@@ -30,7 +30,7 @@ The business logic of your application should take a person's age in years and c
 * Returns their age in Venus years. (A Venus year is .62 Earth years.)
 * Returns their age in Mars years. (A Mars year is 1.88 Earth years.)
 * Returns their age in Jupiter years. (A Jupiter year is 11.86 Earth years.)
-* Determines how many years a user has left to live on each planet… (yikes!) To do this, the application will have to calculate the user's life expectancy. If a user has already surpassed the average life expectancy, return the number of years they have lived past the life expectancy. 
+* Determines how many years a user has left to live on each planet… (yikes!) app will calculate the user's life expectancy. If a user has already surpassed the average life expectancy, return the number of years they have lived past the life expectancy. 
 
 ## Setup/Installation Requirements
 
