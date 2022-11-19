@@ -24,10 +24,10 @@ function handlePlanetForm(event) {
   const planet = new Planet(age);
   const response = 
   `Earth: ${planet.getEarthPlanetYear()}, \n
-    Mercury: ${planet.getMercuryPlanetYear()}, 
-    Venus: ${planet.getVenusPlanetYear()},
-    Mars: ${planet.getMarsPlanetYear()},
-    Jupiter: ${planet.getJupiterPlanetYear()}
+    Mercury: ${planet.getMercuryPlanetYear()}, \n
+    Venus: ${planet.getVenusPlanetYear()}, \n
+    Mars: ${planet.getMarsPlanetYear()}, \n
+    Jupiter: ${planet.getJupiterPlanetYear()} \n
     LifeExpectancy FUNCTION: ${planet.getLifeExpectancy()}`;
 
   const pTag = document.createElement("p");

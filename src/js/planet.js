@@ -1,30 +1,30 @@
 export default class Planet {
   
   constructor(age) { 
-    this.age = age;
     /*
     this.age = age;
     this.tabulations = tabulations;
     this.updattedAgeLE = 0;
     
     */
+    this.age = age;
   }
 
   getEarthPlanetYear() {
     // let planetYear = (365/365);
     // this.age *= planetYear;
-    let age = this.age;
-    console.log("age: ", age);
-    let ageInEarthDays = age * 365;
-    console.log("ageInEarthDays: ", ageInEarthDays);
-    let planetYearInEarthDays = (365);
-    age = Math.round(ageInEarthDays/planetYearInEarthDays);
-    console.log("age: ", age);
-    return age;
-    // let ageInEarthDays = this.age * 365;
+    /* let age = this.age;
+    // console.log("age: ", age);
+    // let ageInEarthDays = age * 365;
+    // console.log("ageInEarthDays: ", ageInEarthDays);
     // let planetYearInEarthDays = (365);
-    // this.age = Math.round(ageInEarthDays/planetYearInEarthDays);
-    // return this.age;
+    // age = Math.round(ageInEarthDays/planetYearInEarthDays);
+    // console.log("age: ", age);
+   return age; */ 
+    let ageInEarthDays = this.age * 365;
+    let planetYearInEarthDays = (365);
+    this.age = Math.round(ageInEarthDays/planetYearInEarthDays);
+    return this.age;
   }
 
   getMercuryPlanetYear(){
