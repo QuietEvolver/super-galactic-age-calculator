@@ -11,19 +11,10 @@ export default class Planet {
   }
 
   getEarthPlanetYear() {
-    // let planetYear = (365/365);
-    // this.age *= planetYear;
-    /* let age = this.age;
-    // console.log("age: ", age);
-    // let ageInEarthDays = age * 365;
-    // console.log("ageInEarthDays: ", ageInEarthDays);
-    // let planetYearInEarthDays = (365);
-    // age = Math.round(ageInEarthDays/planetYearInEarthDays);
-    // console.log("age: ", age);
-   return age; */ 
     let ageInEarthDays = this.age * 365;
     let planetYearInEarthDays = (365);
     this.age = Math.round(ageInEarthDays/planetYearInEarthDays);
+    console.log("Earth age;", this.age);
     return this.age;
   }
 
@@ -32,7 +23,7 @@ export default class Planet {
     let planetMercuryYearInEarthDays = (87.6);
     let ageInEarthDays = this.age * 365;
     this.age = Math.round(ageInEarthDays/planetMercuryYearInEarthDays);
-    console.log("this.age; Mercury ", this.age);
+    console.log("Mercury age;", this.age);
     return this.age;
   }
   
@@ -40,15 +31,16 @@ export default class Planet {
     let planetYearInEarthDays = (226.3);
     let ageInEarthDays = this.age * 365;
     this.age = Math.round(ageInEarthDays/planetYearInEarthDays);
+    console.log("Venus age", this.age);
     return this.age;
   }
 
   getMarsPlanetYear(){
     let planetMarsYearInEarthDays = (686.2);
     let ageInEarthDays = this.age * 365;
-    console.log("ageInEarthDays: ", ageInEarthDays);
+    console.log("Mars ageInEarthDays: ", ageInEarthDays);
     this.age = Math.round(ageInEarthDays/planetMarsYearInEarthDays);
-    console.log("this.age; Mars ", this.age);
+    console.log("Mars Years age", this.age);
     return this.age;
   }
 
@@ -56,9 +48,9 @@ export default class Planet {
     let planetJupiterYearInEarthDays = (4328.9);
     let ageInEarthDays = this.age * 365;
     let planetYear = ageInEarthDays/planetJupiterYearInEarthDays;
-    console.log("planetYear: ", planetYear);
+    console.log("Jupiter planetYear: ", planetYear);
     this.age = Math.round(planetYear);
-    console.log("this.age: ", this.age);
+    console.log("Jupiter age: ", this.age);
     return this.age;
   }
 
@@ -96,21 +88,26 @@ export default class Planet {
   //   }
   // }
 
-  getLifeExpectancy(){
-    // let earthLifeExpectancy = 70;
-    let age = Planet.age;
-    if(this.tabulations.length === 0){
-      return age;
-    }
-    else if(this.size === "pollen"){
-      age =  age + (this.tabulations.length+1);
-      return age;
-    } else if(this.size === "moss"){
-      age  =  age + (this.tabulations.length+1);
-      return age;
-    } else if(this.size === "azure"){
-      age  =  age + (this.tabulations.length+2);
-      return age;
-    }
-  }
+  // getLifeExpectancy(){
+  //   let earthLifeExpectancy = 70;
+  //   let lifeExpectancy;
+  //   let age = Planet.age;
+  //   // Planet.tabluations = this.tabluations;
+    
+  //   if(this.tabulations.length === 0){
+  //     lifeExpectancy = earthLifeExpectancy-age;
+  //     // 
+  //     return lifeExpectancy;
+  //   }
+  //   else if(this.size === "pollen"){
+  //     age =  age + (this.tabulations.length+1);
+  //     return age;
+  //   } else if(this.size === "moss"){
+  //     age  =  age + (this.tabulations.length+1);
+  //     return age;
+  //   } else if(this.size === "azure"){
+  //     age  =  age + (this.tabulations.length+2);
+  //     return age;
+  //   }
+  // }
 }

@@ -10,6 +10,9 @@ function handlePlanetForm(event) {
   let age = parseInt(document.querySelector("#inputted-age").value);
   const tabulations = [];
   console.log("tabulations: ", tabulations);
+  
+  
+  const planet = new Planet(age, this.tabulations);
 
   if(document.getElementById("pollen").checked===true){
     tabulations.push("pollen");
@@ -20,19 +23,25 @@ function handlePlanetForm(event) {
   if(document.getElementById("azure").checked===true){
     tabulations.push("azure");
   } 
-  
-  const planet = new Planet(age);
-  const response = 
+  // const response = 
+  // `Earth: ${planet.getEarthPlanetYear()}, \n
+  //   Mercury: ${planet.getMercuryPlanetYear()}, \n
+  //   Venus: ${planet.getVenusPlanetYear()}, \n
+  //   Mars: ${planet.getMarsPlanetYear()}, \n
+  //   Jupiter: ${planet.getJupiterPlanetYear()} \n
+  //   LifeExpectancy FUNCTION: ${planet.getLifeExpectancy()}`;
+
+  // const pTag = document.createElement("p");
+  // pTag.append(`Your ages on the following planets are: ${response}.`);
+  // document.querySelector('#response').append(pTag);
+  document.querySelector('p#response').innerText = 
   `Earth: ${planet.getEarthPlanetYear()}, \n
     Mercury: ${planet.getMercuryPlanetYear()}, \n
     Venus: ${planet.getVenusPlanetYear()}, \n
     Mars: ${planet.getMarsPlanetYear()}, \n
-    Jupiter: ${planet.getJupiterPlanetYear()} \n
-    LifeExpectancy FUNCTION: ${planet.getLifeExpectancy()}`;
+    Jupiter: ${planet.getJupiterPlanetYear()} \n`;
+    // LifeExpectancy FUNCTION: ${planet.getLifeExpectancy()}
 
-  const pTag = document.createElement("p");
-  pTag.append(`Your ages on the following planets are: ${response}.`);
-  document.querySelector('#response').append(pTag);
 }
 
 window.addEventListener("load", function() {
