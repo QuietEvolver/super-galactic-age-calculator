@@ -54,6 +54,36 @@ export default class Planet {
     return this.age;
   }
 
+  getLifeExpectancy(){
+    const tabulations = []; 
+    console.log("tabulations: ", tabulations);
+    
+    // const planet = new Planet(age, this.tabulations);
+    let planet = new Planet(age, this.tabulations);
+  
+    if(document.getElementById("pollen").checked===true){
+      tabulations.push(1);
+    } 
+    if(document.getElementById("moss").checked===true){
+      tabulations.push(1);
+    }
+    if(document.getElementById("azure").checked===true){
+      tabulations.push(1);
+    } 
+  
+    if ( tabulations.length > 0){ 
+      
+      let anyT = tabulations.length + age; 
+      console.log("tabPlusAge: ", anyT);
+  
+    }  
+    let anyT = tabulations.length + age; 
+    console.log ( "age+t", anyT);
+    let lifeExpectancy = 81;
+    let calcLifeExpectancy = lifeExpectancy - anyT;
+    console.log ( "calcLifeExpectancy+t", calcLifeExpectancy);
+  }
+
   // getLifeExpectancy(){
   //   getMercuryPlanetYear();
   //   let lifeExpectancyInEarthYears = 70; // - this.age;answer1
