@@ -54,35 +54,48 @@ export default class Planet {
     return this.age;
   }
 
-  getLifeExpectancy(){
+ getLifeExpectancy(){
+    this.age = 50;
     const tabulations = []; 
     console.log("tabulations: ", tabulations);
-    
-    // const planet = new Planet(age, this.tabulations);
-    let planet = new Planet(age, this.tabulations);
-  
-    if(document.getElementById("pollen").checked===true){
-      tabulations.push(1);
-    } 
-    if(document.getElementById("moss").checked===true){
-      tabulations.push(1);
-    }
-    if(document.getElementById("azure").checked===true){
-      tabulations.push(1);
-    } 
-  
-    if ( tabulations.length > 0){ 
-      
-      let anyT = tabulations.length + age; 
-      console.log("tabPlusAge: ", anyT);
-  
-    }  
-    let anyT = tabulations.length + age; 
-    console.log ( "age+t", anyT);
-    let lifeExpectancy = 81;
-    let calcLifeExpectancy = lifeExpectancy - anyT;
-    console.log ( "calcLifeExpectancy+t", calcLifeExpectancy);
+    tabulations.forEach(demographicQues1 => {
+      if(demographicQues1 === true){
+        tabulations.push(1);
+      } 
+      // adding to age
+      if ( tabulations.length > 0){ 
+        let newAge = tabulations.length + age; 
+        console.log("tabPlusAge: ", newAge); // anyT
+      }       
+      return this.age;
+    });
   }
+    
+  //   // const planet = new Planet(age, this.tabulations);
+  //   new Planet(age, this.tabulations);
+  
+  //   if(document.getElementById("pollen").checked===true){
+  //     tabulations.push(1);
+  //   } 
+  //   if(document.getElementById("moss").checked===true){
+  //     tabulations.push(1);
+  //   }
+  //   if(document.getElementById("azure").checked===true){
+  //     tabulations.push(1);
+  //   } 
+  
+  //   if ( tabulations.length > 0){ 
+      
+  //     let anyT = tabulations.length + age; 
+  //     console.log("tabPlusAge: ", anyT);
+  
+  //   }  
+  //   let anyT = tabulations.length + age; 
+  //   console.log ( "age+t", anyT);
+  //   let lifeExpectancy = 81;
+  //   let calcLifeExpectancy = lifeExpectancy - anyT;
+  //   console.log ( "calcLifeExpectancy+t", calcLifeExpectancy);
+  // }
 
   // getLifeExpectancy(){
   //   getMercuryPlanetYear();

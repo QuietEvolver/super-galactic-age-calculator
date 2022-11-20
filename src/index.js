@@ -11,7 +11,8 @@ function handlePlanetForm(event) {
   const tabulations = []; 
   console.log("tabulations + age: ", age, tabulations);
   
-  // const planet = new Planet(age, this.tabulations);
+  const planet = new Planet(age, this.tabulations);
+  console.log("planet: ", planet);
 
   // if(document.getElementById("pollen").checked===true){
   //   tabulations.push(1);
@@ -38,18 +39,22 @@ function handlePlanetForm(event) {
 
 
   // document.querySelector('p#response').innerText = 
-  // `Earth: ${planet.getEarthPlanetYear()}, \n
+  //   `Earth: ${planet.getEarthPlanetYear()}, \n
   //   Earth life Expectancy:  ${(calcLifeExpectancy)}, \n
+
   //   Mercury: ${planet.getMercuryPlanetYear()}, \n
   //   Mercury life Expectancy: ${planet.getMercuryPlanetYear(calcLifeExpectancy)}, \n
+
   //   Venus: ${planet.getVenusPlanetYear()}, \n
   //   Venus life Expectancy: : ${planet.getVenusPlanetYear(calcLifeExpectancy)}, \n
+
   //   Mars: ${planet.getMarsPlanetYear()}, \n
   //   Mars life Expectancy: : ${planet.getMarsPlanetYear(calcLifeExpectancy)}, \n
+
   //   Jupiter: ${planet.getJupiterPlanetYear()},  \n
   //   Jupiter Life Expectancy: ${planet.getJupiterPlanetYear(calcLifeExpectancy)} \n`;
 
-    // LifeExpectancy FUNCTION: ${planet.getLifeExpectancy()}
+  //   // LifeExpectancy FUNCTION: ${planet.getLifeExpectancy()}
 
 }
 
