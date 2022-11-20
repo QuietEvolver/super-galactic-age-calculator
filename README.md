@@ -38,9 +38,9 @@ The business logic of your application should take a person's age in years and c
 * Navigate to the top level of the directory.
 * open up a terminal console and type in $ npm install
 * run $ npm run build
-* run $ npm run test to see tests
 * run $ npm run start
 * Open localhost:8080/ in your browser
+* run $ npm run test to see tests
 
 ## Known Bugs
 
