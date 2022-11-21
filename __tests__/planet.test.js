@@ -5,18 +5,18 @@ describe('Planet', () => {
   
   // beforeEach(() => {
   //   planet = new Planet();
-  //   planet.getEarthPlanetYear(10, 0);
+  //   planet.getEarthPlanetYear(10);
   // });
 
   test('should correctly create a planet object',() => {
-    let planet = new Planet(10, 0);
-    expect(planet.age).toEqual(10, 0);
+    let planet = new Planet(10);
+    expect(planet.age).toEqual(10);
   }); 
 
   test('should return a 10 equivalent to 1 Earth year', () => {
-    let planet = new Planet(10, 0);
+    let planet = new Planet(10);
     expect(planet.age).toEqual(10);
-    expect(planet.tabulations).toEqual(0);
+    // expect(planet.tabulations).toEqual(0);
   });
 
   // test('should correctly determine if an age has been entered', () => {
