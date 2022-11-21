@@ -53,7 +53,7 @@ export default class Planet {
     console.log("Jupiter age: ", this.age);
     return this.age;
   }
-}
+// }
 //  getLifeExpectancy(){
 //   const avgLifeExpectancy = 81;  
 //   let lifeExpectancy = avgLifeExpectancy - this.age;
@@ -132,13 +132,17 @@ export default class Planet {
 
 // }
 
-// getChewsGumInfo() {
-//   if(this.age === 'Earth'){
-//     return 1;
-//   } else {
-//     return "Planet out of galactic range."
+//   getLifeExpectancy(){
+//     let demo = [];
+//     let demoQuestion1 = true;
+//     if(demoQuestion1 === true){
+//       demo.push(1);
+//     } else {
+//       return this.age;
+//     }
 //   }
 // }
+
 
 // getLifeExpectancy(){
 //   let earthLifeExpectancy = 70;

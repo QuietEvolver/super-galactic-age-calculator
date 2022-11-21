@@ -24,43 +24,15 @@ function handlePlanetForm(event) {
     tabulations.push(1);
   } 
 
-  //   let anyT = tabulations.length + age; // UPAGE = demo+age
-  //   console.log ( "age+t", anyT);       //
-  //   let lifeExpectancy = 81;             // LifExp 
-  //   let calcLifeExpectancy = lifeExpectancy - anyT; // YOURLifExp = pos
-  // if ( calcLifeExpectancy<0){ 
-  //   // let anyT = tabulations.length + age; 
-  //   // console.log("tabPlusAge: ", anyT);
-  //   `You have ${Math.abs(calcLifeExpectancy)} years left to live`;
-  // } else {
-  //   console.log ( "CALC calcLifeExpectancy+t", calcLifeExpectancy);  return calcLifeExpectancy;
-  // }
-
   let anyT = tabulations.length + age; // UPAGE = demo+age
-  console.log ( "age+t", anyT);        //
+  console.log ( "age+t", anyT);       //
   let lifeExpectancy = 81;             // LifExp 
   let calcLifeExpectancy = lifeExpectancy - anyT; // YOURLifExp = pos
-  // if cacLifeExpectancy is - ,  Math.abs()
-  // else{ return calcLifeExpectancy }
-  // console.log ( "calcLifeExpectancy+t", calcLifeExpectancy);
-
   if ( calcLifeExpectancy<0){ 
-    `Congrats! You have outlived expectancy by ${Math.abs(calcLifeExpectancy)} years`;
+    `You have ${Math.abs(calcLifeExpectancy)} years left to live`;
   } else {
-    console.log ( "CALC calcLifeExpectancy+t", calcLifeExpectancy);  
-    return `Your life expectancy is ${calcLifeExpectancy}`;
+    console.log ( "CALCCCCCC calcLifeExpectancy+t", calcLifeExpectancy);  return calcLifeExpectancy;
   }
-
-  // planet.getEarthPlanetYear();
-  // console.log("planet.getEarthPlanetYear()", planet.getEarthPlanetYear());
-  // planet.getMercuryPlanetYear();
-  // console.log("planet.getMercuryPlanetYear()", planet.getMercuryPlanetYear());
-  // planet.getVenusPlanetYear();
-  // console.log("planet.getVenusPlanetYear()", planet.getVenusPlanetYear());
-  // planet.getMarsPlanetYear();
-  // console.log("planet.getMarsPlanetYear()", planet.getMarsPlanetYear());
-  // planet.getJupiterPlanetYear();
-  // console.log("planet.getJupiterPlanetYear()", planet.getJupiterPlanetYear());
 
   document.querySelector('p#response').innerText = 
     `Earth: ${planet.getEarthPlanetYear()}, \n
@@ -77,8 +49,6 @@ function handlePlanetForm(event) {
 
     Jupiter: ${planet.getJupiterPlanetYear()},  \n
     Jupiter Life Expectancy: ${planet.getJupiterPlanetYear(calcLifeExpectancy)} \n`;
-
-  // LifeExpectancy FUNCTION: ${planet.getLifeExpectancy()}
 
 }
 
