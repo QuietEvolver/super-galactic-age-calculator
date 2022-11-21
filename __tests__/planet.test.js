@@ -8,8 +8,8 @@ describe('Planet', () => {
   // });
 
   test('should correctly create a planet object',() => {
-    let planet = new Planet(10, 0, 0);
-    expect(planet.age).toEqual(10);
+    let planet = new Planet(10, 0);
+    expect(planet.age).toEqual(10, 0);
   }); 
 
   // test('should return a 10 equivalent to 1 Earth year', () => {

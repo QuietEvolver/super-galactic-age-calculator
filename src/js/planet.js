@@ -1,16 +1,12 @@
 export default class Planet {
   
-  constructor() { 
-    /*
-    this.age = age;
-    
+  constructor(age, tabulations) { 
     this.age = age;
     this.tabulations = tabulations; // aka demographics
     this.updattedAgeLE = 0;
     
-    */
   }
-
+}
 //   getEarthPlanetYear() {
 //     let ageInEarthDays = this.age * 365;
 //     let planetYearInEarthDays = (365);
