@@ -7,12 +7,14 @@ export default class Planet {
     
   }
 
-  getEarthPlanetYear() {
-    // let ageInEarthDays = this.age * 365;
-    // let planetYearInEarthDays = (365);
-    // this.age = Math.round(ageInEarthDays/planetYearInEarthDays);
+  getEarthPlanetYear(age) {
+    this.age = age;
+    let ageInEarthDays = this.age * 365;
+    let planetYearInEarthDays = (365);
+    this.age = Math.round(ageInEarthDays/planetYearInEarthDays);
+    this.tabulations = [];
     // console.log("Earth age;", this.age);
-    // return this.age;
+    return this.age;
   }
 }
 //   getMercuryPlanetYear(){
