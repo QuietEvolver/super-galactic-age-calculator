@@ -12,10 +12,10 @@ describe('Planet', () => {
     expect(planet.age).toEqual(10, 0);
   }); 
 
-  // test('should return a 10 equivalent to 1 Earth year', () => {
-  //   let planet = new Planet(10);
-  //   expect(planet.age).toEqual(10);
-  // });
+  test('should return a 10 equivalent to 1 Earth year', () => {
+    let planet = new Planet(10, 0);
+    expect(planet.age).toEqual(10, 0);
+  });
 
   // test('should correctly determine if an age has been entered', () => {
   //   let planet = new Planet("Pluto");

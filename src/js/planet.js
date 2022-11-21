@@ -6,15 +6,15 @@ export default class Planet {
     this.updattedAgeLE = 0;
     
   }
-}
-//   getEarthPlanetYear() {
-//     let ageInEarthDays = this.age * 365;
-//     let planetYearInEarthDays = (365);
-//     this.age = Math.round(ageInEarthDays/planetYearInEarthDays);
-//     console.log("Earth age;", this.age);
-//     return this.age;
-//   }
 
+  getEarthPlanetYear() {
+    // let ageInEarthDays = this.age * 365;
+    // let planetYearInEarthDays = (365);
+    // this.age = Math.round(ageInEarthDays/planetYearInEarthDays);
+    // console.log("Earth age;", this.age);
+    // return this.age;
+  }
+}
 //   getMercuryPlanetYear(){
 //     // let planetYear = (365/.24)
 //     let planetMercuryYearInEarthDays = (87.6);
