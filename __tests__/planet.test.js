@@ -49,10 +49,10 @@ describe('Planet', () => {
 
   // simple: have the user input the average life expectancy for their demographic
 
-  test('should return a value of +1 a person based on their demographic', () => {
-    planet = new Planet(10);
-    expect(planet.getLifeExpectancy()).toEqual(11);
-  });
+  // test('should return a value of +1 a person based on their demographic', () => {
+  //   planet = new Planet(10);
+  //   expect(planet.getLifeExpectancy()).toEqual(11);
+  // });
 
 //   // const absoluteValue = require('./index');
 //   // test('absolute Value function exists', () => {

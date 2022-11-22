@@ -53,7 +53,7 @@ export default class Planet {
     console.log("Jupiter age: ", this.age);
     return this.age;
   }
-// }
+}
 //  getLifeExpectancy(){
 //   const avgLifeExpectancy = 81;  
 //   let lifeExpectancy = avgLifeExpectancy - this.age;
