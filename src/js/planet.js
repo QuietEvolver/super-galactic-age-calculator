@@ -31,14 +31,14 @@ export default class Planet {
     return this.age;
   }
   
-//   getVenusPlanetYear(){
+  getVenusPlanetYear(){
 //     let planetYearInEarthDays = (226.3);
 //     let ageInEarthDays = this.age * 365;
 //     this.age = Math.round(ageInEarthDays/planetYearInEarthDays);
 //     this.tabulations = [];
 //     console.log("Venus age", this.age);
 //     return this.age;
-//   }
+  }
 
 //   getMarsPlanetYear(){
 //     let planetMarsYearInEarthDays = (686.2);
