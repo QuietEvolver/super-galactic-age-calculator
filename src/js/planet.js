@@ -40,7 +40,7 @@ export default class Planet {
     return this.age;
   }
 
-//   getMarsPlanetYear(){
+  getMarsPlanetYear(){
 //     let planetMarsYearInEarthDays = (686.2);
 //     let ageInEarthDays = this.age * 365;
 //     console.log("Mars ageInEarthDays: ", ageInEarthDays);
@@ -48,7 +48,7 @@ export default class Planet {
 //     this.tabulations = [];
 //     console.log("Mars Years age", this.age);
 //     return this.age;
-//   }
+  }
 
 //   getJupiterPlanetYear(){
 //     let planetJupiterYearInEarthDays = (4328.9);
