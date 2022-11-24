@@ -3,11 +3,11 @@ export default class Planet {
   constructor(age) { 
     /*
     this.age = age;
-    this.updattedAgeLE = 0;
     
     */
     this.age = age;
     this.tabulations = [];
+    this.updattedAgeLE = 0;
   }
 
   getEarthPlanetYear() {
@@ -15,6 +15,7 @@ export default class Planet {
     let planetYearInEarthDays = (365);
     this.age = Math.round(ageInEarthDays/planetYearInEarthDays);
     this.tabulations = [];
+    this.updattedAgeLE = 0;
     console.log("Earth age;", this.age);
     return this.age;
   }
@@ -25,6 +26,7 @@ export default class Planet {
     let ageInEarthDays = this.age * 365;
     this.age = Math.round(ageInEarthDays/planetMercuryYearInEarthDays);
     this.tabulations = [];
+    this.updattedAgeLE = 0;
     console.log("Mercury age;", this.age);
     return this.age;
   }
