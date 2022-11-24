@@ -22,10 +22,10 @@ describe('Planet', () => {
     expect(planet.getEarthPlanetYear()).not.toBeNull();
   });
 
-  // test('should return 10 equivalent if it is the planet Earth, for 1 Earth year', () => {
-  //   let planet = new Planet(10, []);
-  //   expect(planet.getEarthPlanetYear()).toEqual(10);
-  // });
+  test('should return 10 equivalent if it is the planet Earth, for 1 Earth year', () => {
+    let planet = new Planet(10, []);
+    expect(planet.getEarthPlanetYear()).toEqual(10);
+  });
 
   // test('should return age for planet Mercury for 10 earth years ', () => { //  876
   //   let planet = new Planet(10, []);
