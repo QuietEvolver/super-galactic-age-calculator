@@ -20,7 +20,7 @@ export default class Planet {
     return this.age;
   }
 
-//   getMercuryPlanetYear(){
+  getMercuryPlanetYear(){
 //     // let planetYear = (365/.24)
 //     let planetMercuryYearInEarthDays = (87.6);
 //     let ageInEarthDays = this.age * 365;
@@ -29,7 +29,7 @@ export default class Planet {
 //     this.updattedAgeLE = 0;
 //     console.log("Mercury age;", this.age);
 //     return this.age;
-//   }
+  }
   
 //   getVenusPlanetYear(){
 //     let planetYearInEarthDays = (226.3);
