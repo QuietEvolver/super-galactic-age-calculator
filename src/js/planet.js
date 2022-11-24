@@ -21,14 +21,14 @@ export default class Planet {
   }
 
   getMercuryPlanetYear(){
-//     // let planetYear = (365/.24)
-//     let planetMercuryYearInEarthDays = (87.6);
-//     let ageInEarthDays = this.age * 365;
-//     this.age = Math.round(ageInEarthDays/planetMercuryYearInEarthDays);
-//     this.tabulations = [];
-//     this.updattedAgeLE = 0;
-//     console.log("Mercury age;", this.age);
-//     return this.age;
+    // let planetYear = (365/.24)
+    let planetMercuryYearInEarthDays = (87.6);
+    let ageInEarthDays = this.age * 365;
+    this.age = Math.round(ageInEarthDays/planetMercuryYearInEarthDays);
+    this.tabulations = [];
+    this.updattedAgeLE = 0;
+    console.log("Mercury age;", this.age);
+    return this.age;
   }
   
 //   getVenusPlanetYear(){
