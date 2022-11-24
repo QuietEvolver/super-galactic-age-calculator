@@ -61,12 +61,13 @@ export default class Planet {
     return this.age;
   }
 }
-//  getLifeExpectancy(){
-//   const avgLifeExpectancy = 81;  
-//   let lifeExpectancy = avgLifeExpectancy - this.age;
-//   console.log("Avg LE Earth age;", lifeExpectancy);
-//   // return lifeExpectancy;
-//  }
+
+ getLifeExpectancy(){
+  const avgLifeExpectancy = 81;  
+  let lifeExpectancy = avgLifeExpectancy - this.age;
+  console.log("Avg LE Earth age;", lifeExpectancy);
+  // return lifeExpectancy;
+ }
 
 // getLifeExpectancy(){
 // // this.age = 50;
