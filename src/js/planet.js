@@ -8,6 +8,7 @@ export default class Planet {
     this.age = age;
     this.tabulations = [];
     this.updattedAgeLE = 0;
+    this.earthLifeExpectancy = 81;
   }
 
   getEarthPlanetYear() {
@@ -61,13 +62,13 @@ export default class Planet {
     return this.age;
   }
 
-
- getLifeExpectancy(){
-//   const avgLifeExpectancy = 81;  
-//   let lifeExpectancy = avgLifeExpectancy - this.age;
-//   console.log("Avg LE Earth age;", lifeExpectancy);
-//   // return lifeExpectancy;
- }
+  getLifeExpectancy(age){
+    let age = this.age;
+    // let avgLifeExpectancy = 81;  
+    this.updattedAgeLE = avgLifeExpectancy - age;
+    console.log("Avg LE Earth age;", updattedAgeLE);
+    return this.updattedAgeLE;
+  }
 }
 // getLifeExpectancy(){
 // // this.age = 50;
