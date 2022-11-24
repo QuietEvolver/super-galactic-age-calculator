@@ -51,14 +51,14 @@ export default class Planet {
   }
 
   getJupiterPlanetYear(){
-//     let planetJupiterYearInEarthDays = (4328.9);
-//     let ageInEarthDays = this.age * 365;
-//     let planetYear = ageInEarthDays/planetJupiterYearInEarthDays;
-//     console.log("Jupiter planetYear: ", planetYear);
-//     this.age = Math.round(planetYear);
-//     this.tabulations = [];
-//     console.log("Jupiter age: ", this.age);
-//     return this.age;
+    let planetJupiterYearInEarthDays = (4328.9);
+    let ageInEarthDays = this.age * 365;
+    let planetYear = ageInEarthDays/planetJupiterYearInEarthDays;
+    console.log("Jupiter planetYear: ", planetYear);
+    this.age = Math.round(planetYear);
+    this.tabulations = [];
+    console.log("Jupiter age: ", this.age);
+    return this.age;
   }
 }
 
