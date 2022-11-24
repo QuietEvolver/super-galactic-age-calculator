@@ -48,6 +48,10 @@ describe('Planet', () => {
   });
 
   // simple: have the user input the average life expectancy for their demographic
+    test('should return a value of a person age for remaining life expectancy ', () => {
+      planet = new Planet(61);
+      expect(planet.getLifeExpectancy()).toEqual(20);
+    });
 
   // test('should return a value of +1 a person based on their demographic', () => {
   //   planet = new Planet(10);
@@ -64,9 +68,5 @@ describe('Planet', () => {
 //     expect(planet.getLifeExpectancy()).toEqual(-20);
 //   });  
   
-//   test('should return a value of a person age for remaining life expectancy ', () => {
-//     planet = new Planet(70);
-//     expect(planet.getLifeExpectancy()).toEqual(20);
-//   });
 });
 

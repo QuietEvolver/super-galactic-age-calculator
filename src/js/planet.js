@@ -60,15 +60,15 @@ export default class Planet {
     console.log("Jupiter age: ", this.age);
     return this.age;
   }
-}
 
-//  getLifeExpectancy(){
+
+ getLifeExpectancy(){
 //   const avgLifeExpectancy = 81;  
 //   let lifeExpectancy = avgLifeExpectancy - this.age;
 //   console.log("Avg LE Earth age;", lifeExpectancy);
 //   // return lifeExpectancy;
-//  }
-
+ }
+}
 // getLifeExpectancy(){
 // // this.age = 50;
 // const tabulations = []; 
