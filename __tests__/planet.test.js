@@ -42,10 +42,10 @@ describe('Planet', () => {
     expect(planet.getMarsPlanetYear()).toEqual(5);
   });
 
-  // test('should return age for planet Jupiter for 10 earth years ', () => {
-  //   let planet = new Planet(10, []);
-  //   expect(planet.getJupiterPlanetYear()).toEqual(1);
-  // });
+  test('should return age for planet Jupiter for 10 earth years ', () => {
+    let planet = new Planet(10, []);
+    expect(planet.getJupiterPlanetYear()).toEqual(1);
+  });
 
   // simple: have the user input the average life expectancy for their demographic
 

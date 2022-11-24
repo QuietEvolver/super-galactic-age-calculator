@@ -50,7 +50,7 @@ export default class Planet {
     return this.age;
   }
 
-//   getJupiterPlanetYear(){
+  getJupiterPlanetYear(){
 //     let planetJupiterYearInEarthDays = (4328.9);
 //     let ageInEarthDays = this.age * 365;
 //     let planetYear = ageInEarthDays/planetJupiterYearInEarthDays;
@@ -59,7 +59,7 @@ export default class Planet {
 //     this.tabulations = [];
 //     console.log("Jupiter age: ", this.age);
 //     return this.age;
-//   }
+  }
 }
 
 //  getLifeExpectancy(){
