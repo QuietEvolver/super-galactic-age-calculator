@@ -37,6 +37,7 @@ export default class Planet {
     let ageInEarthDays = this.age * 365;
     this.age = Math.round(ageInEarthDays/planetYearInEarthDays);
     this.tabulations = [];
+    this.updattedAgeLE = 0;
     console.log("Venus age", this.age);
     return this.age;
   }
@@ -47,6 +48,7 @@ export default class Planet {
     console.log("Mars ageInEarthDays: ", ageInEarthDays);
     this.age = Math.round(ageInEarthDays/planetMarsYearInEarthDays);
     this.tabulations = [];
+    this.updattedAgeLE = 0;
     console.log("Mars Years age", this.age);
     return this.age;
   }
@@ -58,15 +60,17 @@ export default class Planet {
     console.log("Jupiter planetYear: ", planetYear);
     this.age = Math.round(planetYear);
     this.tabulations = [];
+    this.updattedAgeLE = 0;
     console.log("Jupiter age: ", this.age);
     return this.age;
   }
 
-  getLifeExpectancy(age){
-    let age = this.age;
-    // let avgLifeExpectancy = 81;  
+  getLifeExpectancy(){
+    let avgLifeExpectancy = 81; 
+    let age = this.age; 
+    // this.updattedAgeLE = 0;
     this.updattedAgeLE = avgLifeExpectancy - age;
-    console.log("Avg LE Earth age;", updattedAgeLE);
+    console.log("Avg LE Earth age;", this.updattedAgeLE);
     return this.updattedAgeLE;
   }
 }
