@@ -32,10 +32,10 @@ describe('Planet', () => {
     expect(planet.getMercuryPlanetYear()).toEqual(42);
   });
 
-  // test('should return age for planet Venus for 10 earth years ', () => {
-  //   let planet = new Planet(10, []);
-  //   expect(planet.getVenusPlanetYear()).toEqual(16);
-  // });
+  test('should return age for planet Venus for 10 earth years ', () => {
+    let planet = new Planet(10, []);
+    expect(planet.getVenusPlanetYear()).toEqual(16);
+  });
 
   // test('should return age for planet Mars for 10 earth years ', () => {
   //   let planet = new Planet(10, []);
