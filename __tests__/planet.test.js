@@ -53,10 +53,11 @@ describe('Planet', () => {
     let planet = new Planet(10, []);
     expect(planet.getLifeExpectancy()).toEqual(71);
   });
-  // test('should return a value of +1 a person based on their demographic', () => {
-  //   planet = new Planet(10);
-  //   expect(planet.getLifeExpectancy()).toEqual(11);
-  // });
+  
+  test('should return a value of +1 a person based on their demographic tabulations', () => {
+    planet = new Planet(10);
+    expect(planet.getLifeExpectancy()).toEqual(70);
+  });
 
 //   // const absoluteValue = require('./index');
 //   // test('absolute Value function exists', () => {
