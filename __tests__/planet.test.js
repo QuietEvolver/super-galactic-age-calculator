@@ -49,13 +49,14 @@ describe('Planet', () => {
 
   // simple: have the user input the average life expectancy for their demographic
 
-  test('should return age for planet Jupiter for 10 earth years ', () => {
+  test('should return age for planet earth for 10 earth years ', () => {
     let planet = new Planet(10, []);
     expect(planet.getLifeExpectancy()).toEqual(71);
   });
   
+
   test('should return a value of +1 a person based on their demographic tabulations', () => {
-    planet = new Planet(10);
+    let planet = new Planet(10, []);
     expect(planet.getLifeExpectancy()).toEqual(70);
   });
 
