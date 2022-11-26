@@ -56,8 +56,9 @@ describe('Planet', () => {
   
   test('should return age for Mercury planet earth for 10 earth years ', () => {
     let planet = new Planet(10, []);
-    //let updattedAgeLE = 71;
-    expect(planet.getMercuryPlanetYear(updattedAgeLE)).toEqual(175);
+    // let updattedAgeLE = 81;
+    expect( planet.getMercuryPlanetYear(planet.getLifeExpectancy())).toEqual(175);//updattedAgeLE
+    //expect(planet.getLifeExpectancy(planet.getMercuryPlanetYear())).toEqual(175);//updattedAgeLE
   });
   // test('should return a value of +1 a person based on their demographic tabulations', () => {
   //   let planet = new Planet(10, []);
