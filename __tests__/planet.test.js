@@ -62,8 +62,8 @@ describe('Planet', () => {
 
   test('should return return life expectancy for Venus planet for 10 earth years ', () => {
     let planet = new Planet(10);
-    //let updattedAgeLE = 71;
-    expect(planet.getVenusPlanetLifeExpectancy(this.updattedAgeLE)).toEqual(115);
+    // let updattedAgeLE = 71;
+    expect(planet.getVenusPlanetLifeExpectancy(planet.updattedAgeLE)).toEqual(115);
   });
 
   // test('should return return life expectancy for Mars planet for 10 earth years ', () => {
