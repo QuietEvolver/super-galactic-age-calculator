@@ -33,11 +33,11 @@ export default class Planet {
   }
   
   getVenusPlanetYear(){
-    let planetYearInEarthDays = (226.3);
+    let planetVenusYearInEarthDays = (226.3);
     let ageInEarthDays = this.age * 365;
-    this.age = Math.round(ageInEarthDays/planetYearInEarthDays);
+    this.age = Math.round(ageInEarthDays/planetVenusYearInEarthDays);
     this.tabulations = [];
-    this.updattedAgeLE = 0;
+    // this.updattedAgeLE = 0;
     console.log("Venus age", this.age);
     return this.age;
   }
