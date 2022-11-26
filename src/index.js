@@ -27,12 +27,22 @@ function handlePlanetForm(event) {
   let anyT = tabulations.length + age; // UPAGE = demo+age
   console.log ( "age+t", anyT);       //
   let lifeExpectancy = 81;             // LifExp 
-  let calcLifeExpectancy = lifeExpectancy - anyT; // YOURLifExp = pos
-  if ( calcLifeExpectancy<0){ 
-    `You have ${Math.abs(calcLifeExpectancy)} years left to live`;
-  } else {
-    console.log ( "CALCCCCCC calcLifeExpectancy+t", calcLifeExpectancy);  return calcLifeExpectancy;
-  }
+  let calcLifeExpectancy = lifeExpectancy - anyT; // YOURLifExp = pos+
+  // if ( calcLifeExpectancy<0){ 
+  //   `You have ${Math.abs(calcLifeExpectancy)} years left to live`;
+  // } else {
+  //   console.log ( "CALCCCCCC calcLifeExpectancy+t", calcLifeExpectancy);  return calcLifeExpectancy;
+  // }
+
+
+  //////////////////
+
+  // if (this.updattedAgeLE <0){ // on index.js a.k.a calcLifeExpectancy
+  //   `You have ${Math.abs(this.updattedAgeLE)} years left to live`;
+  // } else {
+  //   console.log ( "CALCCCCCC this.updattedAgeLE+t", this.updattedAgeLE);  return this.updattedAgeLE;
+  // }
+
 
   document.querySelector('p#response').innerText = 
     `Earth: ${planet.getEarthPlanetYear()}, \n

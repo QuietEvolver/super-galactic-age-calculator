@@ -46,7 +46,7 @@ export default class Planet {
     let planetVenusYearInEarthDays = (226.3);
     let ageInEarthDays = this.age * 365;
     this.updattedAgeLE = Math.round(((this.earthLifeExpectancy - this.age)*365)/planetVenusYearInEarthDays);
-    console.log("Updatted LE: earthLE - age ", this.updattedAgeLE);
+    console.log("Get venusPY() Updatted LE: earthLE - age ", this.updattedAgeLE);
     this.age = Math.round(ageInEarthDays/planetVenusYearInEarthDays);
     this.tabulations = [];
     console.log("Venus age", this.age);
