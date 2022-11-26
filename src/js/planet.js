@@ -27,7 +27,7 @@ export default class Planet {
     let ageInEarthDays = this.age * 365;
     this.age = Math.round(ageInEarthDays/planetMercuryYearInEarthDays);
     this.tabulations = [];
-    this.updattedAgeLE = 0;
+    // this.updattedAgeLE = 0;
     console.log("Mercury age;", this.age);
     return this.age;
   }
