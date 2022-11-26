@@ -54,11 +54,14 @@ describe('Planet', () => {
     expect(planet.getLifeExpectancy()).toEqual(71);
   });
   
-
-  test('should return a value of +1 a person based on their demographic tabulations', () => {
+  test('should return age for Mercury planet earth for 10 earth years ', () => {
     let planet = new Planet(10, []);
-    expect(planet.getLifeExpectancy()).toEqual(70);
+    expect(planet.getLifeExpectancy()).toEqual(175);
   });
+  // test('should return a value of +1 a person based on their demographic tabulations', () => {
+  //   let planet = new Planet(10, []);
+  //   expect(planet.getLifeExpectancy()).toEqual(70);
+  // });
 
 //   // const absoluteValue = require('./index');
 //   // test('absolute Value function exists', () => {

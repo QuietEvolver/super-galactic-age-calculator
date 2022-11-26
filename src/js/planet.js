@@ -73,16 +73,16 @@ export default class Planet {
     this.updattedAgeLE = avgLifeExpectancy - age;
     console.log("UpdattedAgeLE Earth age;", this.updattedAgeLE);
 
-    // UPAGE = demo+age
-    let tabulations = this.tabulations;
-    tabulations= ["pollen"];
-    if((tabulations[0]===("pollen"))===true){
-      // this.tabulations.push(1);
+    // // UPAGE = demo+age
+    // let tabulations = this.tabulations;
+    // tabulations= ["pollen"];
+    // if((tabulations[0]===("pollen"))===true){
+    //   // this.tabulations.push(1);
       
-      this.updattedAgeLE = this.tabulations.length + age;
-      return  
+    //   this.updattedAgeLE = this.tabulations.length + age;
+    //   return  
 
-    } 
+    // } 
     // this.updattedAgeLE = this.tabulations.length + age; 
 
     console.log ( "age+t", this.updattedAgeLE); // updattedAgeLE); 
