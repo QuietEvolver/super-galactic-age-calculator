@@ -33,27 +33,30 @@ export default class Planet {
   }
   
   getVenusPlanetYear(){
+    // let planetYear = (365/.62)
     let planetVenusYearInEarthDays = (226.3);
     let ageInEarthDays = this.age * 365;
     this.age = Math.round(ageInEarthDays/planetVenusYearInEarthDays);
     this.tabulations = [];
-    // this.updattedAgeLE = 0;
+    this.updattedAgeLE = 0;
     console.log("Venus age", this.age);
     return this.age;
   }
 
   getMarsPlanetYear(){
+    // let planetYear = (365/1.88)
     let planetMarsYearInEarthDays = (686.2);
     let ageInEarthDays = this.age * 365;
-    console.log("Mars ageInEarthDays: ", ageInEarthDays);
+    console.log("Mars years ageInEarthDays: ", ageInEarthDays);
     this.age = Math.round(ageInEarthDays/planetMarsYearInEarthDays);
     this.tabulations = [];
     this.updattedAgeLE = 0;
-    console.log("Mars Years age", this.age);
+    console.log("Mars Years Math.round age", this.age);
     return this.age;
   }
 
   getJupiterPlanetYear(){
+    // let planetYear = (365/11.86)
     let planetJupiterYearInEarthDays = (4328.9);
     let ageInEarthDays = this.age * 365;
     let planetYear = ageInEarthDays/planetJupiterYearInEarthDays;
@@ -61,7 +64,7 @@ export default class Planet {
     this.age = Math.round(planetYear);
     this.tabulations = [];
     this.updattedAgeLE = 0;
-    console.log("Jupiter age: ", this.age);
+    console.log("Jupiter Math.Round age: ", this.age);
     return this.age;
   }
 
