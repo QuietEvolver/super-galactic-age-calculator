@@ -36,10 +36,10 @@ export default class Planet {
     // let planetYear = (365/.62)
     let planetVenusYearInEarthDays = (226.3);
     let ageInEarthDays = this.age * 365;
+    this.updattedAgeLE = Math.round(((this.earthLifeExpectancy - this.age)*365)/planetVenusYearInEarthDays);
+    console.log("Updatted LE: earthLE - age ", this.updattedAgeLE);
     this.age = Math.round(ageInEarthDays/planetVenusYearInEarthDays);
     this.tabulations = [];
-    this.updattedAgeLE = Math.round((this.earthLifeExpectancy - this.age ));///planetVenusYearInEarthDays);
-    console.log("Updatted LE: earthLE - age ", this.updattedAgeLE);
     console.log("Venus age", this.age);
     return this.age;
   }
@@ -90,7 +90,7 @@ export default class Planet {
     // this.updattedAgeLE = this.tabulations.length + age; 
 
     console.log ( "age+t", this.updattedAgeLE); // updattedAgeLE); 
-      
+
     return this.updattedAgeLE;
   }
 }
