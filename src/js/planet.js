@@ -34,11 +34,11 @@ export default class Planet {
 
   getVenusPlanetLifeExpectancy(){
     // let planetYear = (365/.62)
-    // let lifeExpectancy = (this.earthLifeExpectancy - this.age)*365;
-    // let planetVenusYearInEarthDays = (226.3);
-    // this.updattedAgeLE = Math.round(lifeExpectancy/planetVenusYearInEarthDays);
-    // console.log("getVenusPlanetLifeExpectancy() Updatted LE: earthLE - age ", this.updattedAgeLE);   
-    // return this.updattedAgeLE;
+    let lifeExpectancy = (this.earthLifeExpectancy - this.age)*365;
+    let planetVenusYearInEarthDays = (226.3);
+    this.updattedAgeLE = Math.round(lifeExpectancy/planetVenusYearInEarthDays);
+    console.log("getVenusPlanetLifeExpectancy() Updatted LE: earthLE - age ", this.updattedAgeLE);   
+    return this.updattedAgeLE;
   }
   
   getVenusPlanetYear(){
