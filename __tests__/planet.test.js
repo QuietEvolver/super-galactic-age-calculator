@@ -49,17 +49,23 @@ describe('Planet', () => {
 
   // simple: have the user input the average life expectancy for their demographic
 
-  test('should return age for planet earth for 10 earth years ', () => {
+  test('should return return life expectancy for planet earth for 10 earth years ', () => {
     let planet = new Planet(10, []);
     expect(planet.getLifeExpectancy()).toEqual(71);
   });
   
-  test('should return age for Mercury planet earth for 10 earth years ', () => {
+  test('should return return life expectancy for Mercury planet for 10 earth years ', () => {
     let planet = new Planet(10, []);
     let updattedAgeLE = 71;
-    expect( planet.getMercuryPlanetYear(planet.getLifeExpectancy(planet.getMercuryPlanetYear(updattedAgeLE)))).toEqual(175);//updattedAgeLE
-    //expect(planet.getLifeExpectancy(planet.getMercuryPlanetYear())).toEqual(175);//updattedAgeLE
+    expect( planet.getMercuryPlanetYear(planet.getLifeExpectancy(planet.getMercuryPlanetYear(updattedAgeLE)))).toEqual(175);
   });
+
+  test('should return return life expectancy for Venus planet for 10 earth years ', () => {
+    let planet = new Planet(10, []);
+    let updattedAgeLE = 71;
+    expect( planet.getVenusPlanetYear(planet.getLifeExpectancy(planet.getVenusPlanetYear(updattedAgeLE)))).toEqual(455);
+  });
+  
   // test('should return a value of +1 a person based on their demographic tabulations', () => {
   //   let planet = new Planet(10, []);
   //   expect(planet.getLifeExpectancy()).toEqual(70);
