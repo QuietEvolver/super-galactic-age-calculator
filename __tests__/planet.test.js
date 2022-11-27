@@ -80,7 +80,7 @@ describe('Planet', () => {
 
   test('should return a value of +1 a person based on their demographic tabulations', () => {
     let planet = new Planet(10, []);
-    expect(planet.getLifeExpectancy()).toEqual(70);
+    expect(planet.tabulations[0]).toEqual("pollen");
   });
 
 //   // const absoluteValue = require('./index');
