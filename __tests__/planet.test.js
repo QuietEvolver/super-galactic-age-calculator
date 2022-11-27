@@ -66,11 +66,11 @@ describe('Planet', () => {
     expect(planet.getVenusPlanetLifeExpectancy(planet.updattedAgeLE)).toEqual(115);
   });
 
-  // test('should return return life expectancy for Mars planet for 10 earth years ', () => {
-  //   let planet = new Planet(10, []);
-  //   let updattedAgeLE = 71;
-  //   expect( planet.getMarsPlanetYear(planet.getLifeExpectancy(planet.getMarsPlanetYear(updattedAgeLE)))).toEqual(38);
-  // });
+  test('should return return life expectancy for Mars planet for 10 earth years ', () => {
+    let planet = new Planet(10, []);
+    let updattedAgeLE = 71;
+    expect( planet.getMarsPlanetYear(planet.getLifeExpectancy(planet.getMarsPlanetYear(updattedAgeLE)))).toEqual(38);
+  });
 
   // test('should return return life expectancy for Jupiter planet for 10 earth years ', () => {
   //   let planet = new Planet(10);

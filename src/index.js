@@ -52,10 +52,10 @@ function handlePlanetForm(event) {
     Mercury life Expectancy: ${planet.getMercuryPlanetYear(calcLifeExpectancy)}, \n
 
     Venus: ${planet.getVenusPlanetYear()}, \n
-    Venus life Expectancy: : ${planet.getVenusPlanetYear(calcLifeExpectancy)}, \n
+    Venus life Expectancy: ${planet.getVenusPlanetYear(calcLifeExpectancy)}, \n
 
     Mars: ${planet.getMarsPlanetYear()}, \n
-    Mars life Expectancy: : ${planet.getMarsPlanetYear(calcLifeExpectancy)}, \n
+    Mars life Expectancy: ${planet.getMarsPlanetYear(calcLifeExpectancy)}, \n
 
     Jupiter: ${planet.getJupiterPlanetYear()},  \n
     Jupiter Life Expectancy: ${planet.getJupiterPlanetYear(calcLifeExpectancy)} \n`;
