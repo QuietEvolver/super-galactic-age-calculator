@@ -66,11 +66,11 @@ describe('Planet', () => {
     expect(planet.getVenusPlanetLifeExpectancy(planet.updattedAgeLE)).toEqual(115);
   });
 
-  test('should return return life expectancy for Mars planet for 10 earth years ', () => {
-    let planet = new Planet(10, []);
-    let updattedAgeLE = 71;
-    expect( planet.getMarsPlanetYear(planet.getLifeExpectancy(planet.getMarsPlanetYear(updattedAgeLE)))).toEqual(38);
-  });
+  // test('should return return life expectancy for Mars planet for 10 earth years ', () => {
+  //   let planet = new Planet(10, []);
+  //   let updattedAgeLE = 71;
+  //   expect( planet.getMarsPlanetYear(planet.getLifeExpectancy(planet.getMarsPlanetYear(updattedAgeLE)))).toEqual(38);
+  // });
 
   // test('should return return life expectancy for Jupiter planet for 10 earth years ', () => {
   //   let planet = new Planet(10);
@@ -78,10 +78,10 @@ describe('Planet', () => {
   //   expect( planet.getJupiterPlanetYear(planet.getLifeExpectancy(planet.getJupiterPlanetYear(updattedAgeLE)))).toEqual(6);
   // });
 
-  // test('should return a value of +1 a person based on their demographic tabulations', () => {
-  //   let planet = new Planet(10, []);
-  //   expect(planet.getLifeExpectancy()).toEqual(70);
-  // });
+  test('should return a value of +1 a person based on their demographic tabulations', () => {
+    let planet = new Planet(10, []);
+    expect(planet.getLifeExpectancy()).toEqual(70);
+  });
 
 //   // const absoluteValue = require('./index');
 //   // test('absolute Value function exists', () => {
