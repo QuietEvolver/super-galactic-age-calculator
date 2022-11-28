@@ -1,10 +1,6 @@
 export default class Planet {
   
   constructor(age) { 
-    /*
-    this.age = age;
-    
-    */
     this.age = age;
     this.tabulations = [];
     this.updattedAgeLE = 0;
@@ -24,34 +20,32 @@ export default class Planet {
   getLifeExpectancy(){
     let avgLifeExpectancy = 81; 
     let age = this.age; 
-    // // this.updattedAgeLE = 0;
+    // this.updattedAgeLE = 0;
     this.updattedAgeLE = avgLifeExpectancy - age;
     console.log("UpdattedAgeLE Earth age;", this.updattedAgeLE);
- 
-    // if( this.tabulations[0] === "checked"){ // aka. tabbed demo question1
-    //   age = this.tabulations.length + age;
-    //   return age;
-    // }
-    // // UPAGE = demo+age
-    // let tabulations = this.tabulations;
-    // tabulations= ["pollen"];
-    // if((tabulations[0]===("pollen"))===true){
-    //   // this.tabulations.push(1);
-      
-    //   this.updattedAgeLE = this.tabulations.length + age;
-    //   return  
-
-    // } 
-    // this.updattedAgeLE = this.tabulations.length + age; 
-
-    console.log ( "age+t", this.updattedAgeLE); // updattedAgeLE); 
-
     return this.updattedAgeLE;
   }
   
-  // gettabbedDemographics(){
+  // getTabbedDemographics(){
   //   this.tabulations = ["checked"];
   //   console.log("tab[]length", (this.tabulations.length+age));
+  // if( this.tabulations[0] === "checked"){ // aka. tabbed demo question1
+  //   age = this.tabulations.length + age;
+  //   return age;
+  // }
+  // // UPAGE = demo+age
+  // let tabulations = this.tabulations;
+  // tabulations= ["pollen"];
+  // if((tabulations[0]===("pollen"))===true){
+  //   // this.tabulations.push(1);
+    
+  //   this.updattedAgeLE = this.tabulations.length + age;
+  //   return  
+
+  // } 
+  // this.updattedAgeLE = this.tabulations.length + age; 
+
+  // console.log ( "this.updattedAgeLE", this.updattedAgeLE); // updattedAgeLE);
   // }
 
   getMercuryPlanetYear(){
