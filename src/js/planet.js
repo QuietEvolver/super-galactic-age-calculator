@@ -15,11 +15,44 @@ export default class Planet {
     let ageInEarthDays = this.age * 365;
     let planetYearInEarthDays = (365);
     this.age = Math.round(ageInEarthDays/planetYearInEarthDays);
-    this.tabulations = [];
+    // this.tabulations = [];
     this.updattedAgeLE = 0;
     console.log("Earth age;", this.age);
     return this.age;
   }
+
+  getLifeExpectancy(){
+    let avgLifeExpectancy = 81; 
+    let age = this.age; 
+    // // this.updattedAgeLE = 0;
+    this.updattedAgeLE = avgLifeExpectancy - age;
+    console.log("UpdattedAgeLE Earth age;", this.updattedAgeLE);
+ 
+    // if( this.tabulations[0] === "checked"){ // aka. tabbed demo question1
+    //   age = this.tabulations.length + age;
+    //   return age;
+    // }
+    // // UPAGE = demo+age
+    // let tabulations = this.tabulations;
+    // tabulations= ["pollen"];
+    // if((tabulations[0]===("pollen"))===true){
+    //   // this.tabulations.push(1);
+      
+    //   this.updattedAgeLE = this.tabulations.length + age;
+    //   return  
+
+    // } 
+    // this.updattedAgeLE = this.tabulations.length + age; 
+
+    console.log ( "age+t", this.updattedAgeLE); // updattedAgeLE); 
+
+    return this.updattedAgeLE;
+  }
+  
+  // gettabbedDemographics(){
+  //   this.tabulations = ["checked"];
+  //   console.log("tab[]length", (this.tabulations.length+age));
+  // }
 
   getMercuryPlanetYear(){
     // let planetYear = (365/.24)
@@ -45,8 +78,8 @@ export default class Planet {
     // let planetYear = (365/.62)
     let planetVenusYearInEarthDays = (226.3);
     let ageInEarthDays = this.age * 365;
-    this.updattedAgeLE = Math.round(((this.earthLifeExpectancy - this.age)*365)/planetVenusYearInEarthDays);
-    console.log("Get venusPY() Updatted LE: earthLE - age ", this.updattedAgeLE);
+    // this.updattedAgeLE = Math.round(((this.earthLifeExpectancy - this.age)*365)/planetVenusYearInEarthDays);
+    // console.log("Get venusPY() Updatted LE: earthLE - age ", this.updattedAgeLE);
     this.age = Math.round(ageInEarthDays/planetVenusYearInEarthDays);
     this.tabulations = [];
     console.log("Venus age", this.age);
@@ -68,37 +101,11 @@ export default class Planet {
     // let planetYear = (365/11.86)
     let planetJupiterYearInEarthDays = (4328.9);
     let ageInEarthDays = this.age * 365;
-    let planetYear = ageInEarthDays/planetJupiterYearInEarthDays;
-    console.log("Jupiter planetYear: ", planetYear);
-    this.age = Math.round(planetYear);
+    this.age = Math.round(ageInEarthDays/planetJupiterYearInEarthDays);
     this.tabulations = [];
-    this.updattedAgeLE = 0;
+    // this.updattedAgeLE = 0;
     console.log("Jupiter Math.Round age: ", this.age);
     return this.age;
   }
 
-  getLifeExpectancy(){
-    let avgLifeExpectancy = 81; 
-    let age = this.age; 
-    // this.updattedAgeLE = 0;
-    this.tabulations = [];
-    this.updattedAgeLE = avgLifeExpectancy - age;
-    console.log("UpdattedAgeLE Earth age;", this.updattedAgeLE);
-
-    // // UPAGE = demo+age
-    // let tabulations = this.tabulations;
-    // tabulations= ["pollen"];
-    // if((tabulations[0]===("pollen"))===true){
-    //   // this.tabulations.push(1);
-      
-    //   this.updattedAgeLE = this.tabulations.length + age;
-    //   return  
-
-    // } 
-    // this.updattedAgeLE = this.tabulations.length + age; 
-
-    console.log ( "age+t", this.updattedAgeLE); // updattedAgeLE); 
-
-    return this.updattedAgeLE;
-  }
 }
